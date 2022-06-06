@@ -1,0 +1,9 @@
+# NOTE - Host info below will be replaced with environment variables from entrypoint
+# Changing this line in this file will override the replacement
+
+listeners
+uselistener meterpreter
+set Name meterpreter
+set Port 81
+set Host https://127.0.0.1:8443
+execute
