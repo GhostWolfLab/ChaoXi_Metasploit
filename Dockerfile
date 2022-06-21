@@ -21,7 +21,11 @@ RUN cd /opt && \
     ln -s /opt/ttyd.x86_64 /usr/bin/ttyd
 
 RUN echo "ServerName 127.0.0.1:80" >> /etc/apache2/apache2.conf && \
-    service apache2 start     
+
+RUN cd /opt && \
+    wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
+    tar -zxvf ngrok-v3-stable-linux-amd64.tgz && \
+    rm -rf ngrok-v3-stable-linux-amd64.tgz    
 
 WORKDIR /opt/
 
