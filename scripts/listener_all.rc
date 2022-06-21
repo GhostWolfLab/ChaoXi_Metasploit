@@ -1,3 +1,0 @@
-resource scripts/listener_https.rc
-resource scripts/listener_meterpreter.rc
-listeners
