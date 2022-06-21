@@ -2,9 +2,9 @@
 
 潮汐平台的Metasploit Docker容器构建
 
-自带生成apache木马方便下载
+自带apache方便生成木马下载
 
-启动m命令：
+启动命令：
 
 ```
 docker run -it --rm -p 7681:7681 -p 4444:4444 -p 80:80 metasploit tini -- ttyd -p 7681 msfconsole
